@@ -1,89 +1,75 @@
 
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, button, cite, code,
-  del, dfn, em, img, input, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i,   dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed,
-  figure, figcaption, footer, header, hgroup,
-  menu, nav, output,  section, summary,
-  time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
-
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
   ol, ul {
     list-style: none;
-  }
-  blockquote, q {
-    quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: &#x27;&#x27;;
-    content: none;
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
   a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
-  html, body {
-    width: 100%;
-    margin: 0;
-  };
-
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section {
-    display: block;
+    color: none;
+    text-decoration: none;
   }
 
 
-
-*,body{
+*{
   box-sizing:border-box;
   font-family:arial;
+  margin:0;
+  padding:0;
+}
+div{
+  display:block;
 }
 
 
 
   header{
     position:absolute;
+    top:0;
     left:0;
-    right:0;
-    background:rgba(1,1,1,0.5);
-    font-size:30px;
-    padding:5px;
+    background-color:rgba(1,1,1,0);
+    font-size:25px;
+    padding:15px;
     width:100%;
     color:white;
     user-select:none;
   }
 
 
+.meniu{
+  margin-right:10%;
+}
+
+.meniu div{
+  float:right;
+  margin-left:20px;
+}
+
+
+
 .indexPrimaPoza{
+  box-shadow: inset  0px 77px 122px -42px rgba(144,144,144,1);
   background:url("Poze/index.jpg");
   background-size:cover;
+  background-color:rgb(255,255,255);
   height:100%;
   width:100%;
 }
 
+.titlu{
+  position:absolute;
+  font-size:50px;
+  color:white;
+  margin-top:10%;
+  padding:30px;
+  padding-left:0;
+  width: 80%!important;
+  margin-left: 10%!important;
+  margin-right: 10%!important;
+  max-width: none!important;
+  min-width: 0!important;
+}
 
 footer{
     position:relative;
@@ -142,7 +128,6 @@ footer{
 
   }
   .rotatingCerc{
-    position:absolute;
     position:absolute;
     width:10px;
     height:10px;
