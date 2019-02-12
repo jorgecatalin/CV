@@ -4,13 +4,12 @@
   a, abbr, acronym, address, big, button, cite, code,
   del, dfn, em, img, input, ins, kbd, q, s, samp,
   small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
+  b, u, i,   dl, dt, dd, ol, ul, li,
   fieldset, form, label, legend,
   table, caption, tbody, tfoot, thead, tr, th, td,
   article, aside, canvas, details, embed,
   figure, figcaption, footer, header, hgroup,
-  menu, nav, output, ruby, section, summary,
+  menu, nav, output,  section, summary,
   time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -24,10 +23,6 @@
   article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
     display: block;
-  }
-  body {
-    line-height: 1;
-    font-family: BentonSans, sans-serif;
   }
   ol, ul {
     list-style: none;
@@ -60,35 +55,122 @@
     display: block;
   }
 
-  button {
-    background: transparent;
-    border: none;
-    color: inherit;
-    cursor: pointer;
-    padding: initial;
-  }
-
-  body {
-    min-height: calc(100vh - 48px);
-    line-height: 1;
-    font-family: IBMPlexSans, Helvetica Neue, Segoe UI, Helvetica, Verdana, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body ::-moz-selection {
-    background-color: #7dbcff99;
-  }
-
-  input, textarea, [contenteditable] {
-    font-family: Noto Sans, Helvetica Neue, Segoe UI, Helvetica, Verdana, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-  }
 
 
+*,body{
+  box-sizing:border-box;
+  font-family:arial;
+}
 
 
 
   header{
-    background:red;
+    position:absolute;
+    left:0;
+    right:0;
+    background:rgba(1,1,1,0.5);
+    font-size:30px;
+    padding:5px;
+    width:100%;
+    color:white;
+    user-select:none;
   }
+
+
+.indexPrimaPoza{
+  background:url("Poze/index.jpg");
+  background-size:cover;
+  height:100%;
+  width:100%;
+}
+
+
+footer{
+    position:relative;
+    left:0;
+    right:0;
+    background:rgba(1,1,1,1);
+    font-size:10px;
+    padding:5px;
+    width:100%;
+    color:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .butonCerc{
+    position:relative;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    background:rgba(155,24,255,1);
+  }
+  .outerCerc{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    border:20px solid rgba(155,155,155,1);
+    background:rgba(155,155,155,0);
+  }
+  .innerCerc{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    background:rgba(155,155,155,1);
+    left:25px;
+    top:25px;
+
+  }
+  .rotatingCerc{
+    position:absolute;
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    background:rgba(255,11,11,1);
+    left:45px;
+    top:45px;
+    box-shadow:25px 0px 15px 5px white;
+    -webkit-animation: rotireButon 2s linear infinite; /* Safari 4+ */
+    -moz-animation:    rotireButon 2s linear infinite; /* Fx 5+ */
+    -o-animation:      rotireButon 2s linear infinite; /* Opera 12+ */
+    animation:         rotireButon 2s linear infinite; /* IE 10+, Fx 29+ */
+  }
+
+
+  @-webkit-keyframes rotireButon{
+    0%   { transform:rotate(0deg); }
+    100% { opacity: 1;transform:rotate(360deg); }
+    }
+  @-moz-keyframes rotireButon {
+    0%   { transform:rotate(0deg); }
+    100% { opacity: 1;transform:rotate(360deg); }
+   }
+  @-o-keyframes rotireButon{
+    0%   { transform:rotate(0deg); }
+    100% { opacity: 1;transform:rotate(360deg); }
+   }
+  @keyframes rotireButon {
+    0%   { transform:rotate(0deg); }
+    100% { opacity: 1;transform:rotate(360deg); }
+   }
