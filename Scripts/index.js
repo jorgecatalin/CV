@@ -27,8 +27,12 @@ window.addEventListener("scroll",function(){
 	if(offset>500&&SW){
 
 		topBar.classList.add("topSchimba");
-
-		moveAll();
+			moveAll();
+		baraJosMeniu.style.display="none";
+		setTimeout(function(){ 
+			moveAll();
+			baraJosMeniu.style.display="block"; 
+		},301);
 
 		console.log("peste500");
 		
@@ -37,13 +41,9 @@ window.addEventListener("scroll",function(){
 	else if(offset<=500){
 
 		topBar.classList.remove("topSchimba");
-		baraJosMeniu.style.display="none";
-		setTimeout(function(){ 
-			moveAll();
-			baraJosMeniu.style.display="block"; 
-		}, 301);
-		
 
+
+		moveAll();
 
 		SW=1;
 	}
