@@ -1,14 +1,16 @@
 var indexPrimaPoza = document.getElementById("indexPrimaPoza");
-var sw=3,SW=true,
+var sw=4,SW=true,
 	topBar = document.getElementById("top");
 
 
 
 var baraJosMeniu = document.getElementById("baraJosMeniu"),
 baraJosMeniu2 = document.getElementById("baraJosMeniu2"),
+ meniu4 = document.getElementById("meniu4"),
  meniu3 = document.getElementById("meniu3"),
  meniu2 = document.getElementById("meniu2"),
- meniu1 = document.getElementById("meniu1");
+ meniu1 = document.getElementById("meniu1"),
+ switchForMoveAll=1;
 
  moveAll();
 
@@ -34,6 +36,7 @@ window.addEventListener("scroll",function(){
 			baraJosMeniu.style.display="block"; 
 		},301);
 
+			switchForMoveAll=1;
 		console.log("peste500");
 		
 		SW=0;
@@ -42,8 +45,12 @@ window.addEventListener("scroll",function(){
 
 		topBar.classList.remove("topSchimba");
 
+		if(switchForMoveAll==1){
+			moveAll();
+			switchForMoveAll=0;
 
-		moveAll();
+			console.log("da");
+		}
 
 		SW=1;
 	}
@@ -75,8 +82,10 @@ function moveAll(){
 			move(meniu1,baraJosMeniu);
 		else if(sw==2)
 			move(meniu2,baraJosMeniu);
-		else
+		else if(sw==3)
 			move(meniu3,baraJosMeniu);
+		else
+			move(meniu4,baraJosMeniu);
 
 		console.log("ceva");
 }
@@ -84,11 +93,14 @@ function moveAll(){
 meniu1.addEventListener("mousemove",function(){move(meniu1,baraJosMeniu2);baraJosMeniu2.style.display="block";});
 meniu2.addEventListener("mousemove",function(){move(meniu2,baraJosMeniu2);baraJosMeniu2.style.display="block";});
 meniu3.addEventListener("mousemove",function(){move(meniu3,baraJosMeniu2);baraJosMeniu2.style.display="block";});
+meniu4.addEventListener("mousemove",function(){move(meniu4,baraJosMeniu2);baraJosMeniu2.style.display="block";});
 
 meniu1.addEventListener("mouseleave",function(){baraJosMeniu2.style.display="none";});
 meniu2.addEventListener("mouseleave",function(){baraJosMeniu2.style.display="none";});
 meniu3.addEventListener("mouseleave",function(){baraJosMeniu2.style.display="none";});
+meniu4.addEventListener("mouseleave",function(){baraJosMeniu2.style.display="none";});
 
 meniu1.addEventListener("click",function(){move(meniu1,baraJosMeniu);sw=1});
 meniu2.addEventListener("click",function(){move(meniu2,baraJosMeniu);sw=2});
 meniu3.addEventListener("click",function(){move(meniu3,baraJosMeniu);sw=3});
+meniu4.addEventListener("click",function(){move(meniu4,baraJosMeniu);sw=4});

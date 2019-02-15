@@ -46,12 +46,12 @@ html,body{
     top:0;
     left:0;
     background-color:rgba(1,1,1,0);
-    font-size:5vh;
+    font-size:4vh;
     padding:15px 0 15px 0;
     width:100%;
     color:white;
     user-select:none;
-    font-weight:700;
+    font-weight:600;
   }
 
 .topSchimba{
@@ -60,7 +60,7 @@ html,body{
   background:rgba(15,15,15,0.8);
   font-size:2.5vh;
   color:rgb(255,255,255);
-  padding:15px 0 15px 0;
+  padding:10px 0 10px 0;
   font-weight:600;
 }
 
@@ -93,19 +93,11 @@ html,body{
   cursor:pointer;
 }
 
-.meniu div:nth-child(1):hover ~.baraJosMeniu{
-  width:32vh;
-  right:22vh;
+.topNume{
+  font-family: 'Great Vibes', cursive;
+  position:absolute;
+  left:10%;
 }
-.meniu div:nth-child(1):hover ~.baraJosMeniu{
-  width:32vh;
-  right:22vh;
-}
-.meniu div:nth-child(1):hover ~.baraJosMeniu{
-  width:32vh;
-  right:22vh;
-}
-
 
 
 .indexPrimaPoza{
@@ -170,76 +162,42 @@ html,body{
 
 
 
+.skills{
+  position:relative;
+  width:100vw;
+  overflow:hidden;
+
+}
+
+
+.skills div:nth-child(1){
+  position:absolute;
+  left:0;
+  top:0;
+  background:url('../Poze/skills.jpg');
+  filter:grayscale(100%);
+  background-attachment:fixed;
+  height:100%;
+  width:100%;
+  background-color:red;
+  z-index:1;
+}
+
+
+
+.containerSkills{
+  font-size:5vh;
+  color:white;
+  
+  width:80%;
+  padding:10% 0 10% 0;
+  margin-left:10%;
+  margin-right:10%;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-  .butonCerc{
-    display:none;
-    position:relative;
-    width:100px;
-    height:100px;
-    border-radius:100%;
-    background:rgba(155,24,255,1);
-  }
-  .outerCerc{
-    position:absolute;
-    width:100px;
-    height:100px;
-    border-radius:100%;
-    border:20px solid rgba(155,155,155,1);
-    background:rgba(155,155,155,0);
-  }
-  .innerCerc{
-    position:absolute;
-    width:50px;
-    height:50px;
-    border-radius:100%;
-    background:rgba(155,155,155,1);
-    left:25px;
-    top:25px;
-
-  }
-  .rotatingCerc{
-    position:absolute;
-    width:10px;
-    height:10px;
-    border-radius:100%;
-    background:rgba(255,11,11,1);
-    left:45px;
-    top:45px;
-    box-shadow:25px 0px 15px 5px white;
-    -webkit-animation: rotireButon 2s linear infinite; /* Safari 4+ */
-    -moz-animation:    rotireButon 2s linear infinite; /* Fx 5+ */
-    -o-animation:      rotireButon 2s linear infinite; /* Opera 12+ */
-    animation:         rotireButon 2s linear infinite; /* IE 10+, Fx 29+ */
-  }
-
-
-  @-webkit-keyframes rotireButon{
-    0%   { transform:rotate(0deg); }
-    100% { opacity: 1;transform:rotate(360deg); }
-    }
-  @-moz-keyframes rotireButon {
-    0%   { transform:rotate(0deg); }
-    100% { opacity: 1;transform:rotate(360deg); }
-   }
-  @-o-keyframes rotireButon{
-    0%   { transform:rotate(0deg); }
-    100% { opacity: 1;transform:rotate(360deg); }
-   }
-  @keyframes rotireButon {
-    0%   { transform:rotate(0deg); }
-    100% { opacity: 1;transform:rotate(360deg); }
-   }
 
 
 
