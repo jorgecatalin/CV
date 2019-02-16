@@ -6,10 +6,6 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
-  a {
-    color: none;
-    text-decoration: none;
-  }
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, button, cite, code,
@@ -28,6 +24,12 @@
     box-sizing:border-box;
     font-family:arial;
     display:block;
+    cursor:default;
+  }
+  a {
+    color: none;
+    text-decoration: none;
+    cursor:pointer;
   }
 
 *{
@@ -164,40 +166,68 @@ html,body{
 
 .skills{
   position:relative;
-  width:100vw;
+  width:100%;
   overflow:hidden;
+  margin-top:10vh;
+  padding-bottom:20vh;
 
 }
 
 
-.skills div:nth-child(1){
+.skillsBackground{
   position:absolute;
   left:0;
   top:0;
   background:url('../Poze/skills.jpg');
+  background-size:cover;
   filter:grayscale(100%);
   background-attachment:fixed;
   height:100%;
   width:100%;
   background-color:red;
-  z-index:1;
+  clip-path:polygon(0 10vw ,100% 0,100% 100% ,0 100% );
 }
 
 
 
 .containerSkills{
-  font-size:5vh;
-  color:white;
-  
+  display:flex;
+  flex-wrap: wrap;
+  position:relative;
+  font-size:3vh;
+  padding:40vh 0 20vh 0;
   width:80%;
-  padding:10% 0 10% 0;
   margin-left:10%;
   margin-right:10%;
 }
 
 
-
-
+.skillsPanou{
+  color:rgb(66,66,66);
+  float:left;
+  background-color:white;
+  width:40vh;
+  padding:6vh;
+  margin:auto;
+  box-shadow:3px 3px 5px 0 rgb(20,20,20);
+  text-align:center;
+  border-radius:2%;
+  min-height:60vh;
+  margin-top:5vh;
+}
+.skillsPanou div{
+  margin-bottom:5vh;
+}
+.skillsPanou div:nth-child(1){
+  margin-bottom:0;
+  font-size:5vh;
+}
+.skillsPanou div:nth-child(2){
+  width:60%;
+  height:1px;
+  background:rgb(155,155,155);
+  margin:4vh 0 4vh 20%;
+}
 
 
 
