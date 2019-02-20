@@ -172,7 +172,7 @@ html,body{
   height:100%;
   width:100%;
   background-color:red;
-  clip-path:polygon(0 10vw ,100% 0,100% 100% ,0 100% );
+  clip-path:polygon(0 10vw ,100% 0,100% 100% ,0 95% );
 }
 
 
@@ -223,7 +223,6 @@ html,body{
   position:relative;
   width:100%;
   overflow:hidden;
-  margin-top:10vh;
   padding-bottom:20vh;
 
 }
@@ -240,9 +239,9 @@ html,body{
   margin-left:10%;
   margin-right:10%;
 }
-.containerPortofoliu div:nth-child(1){
+.titluPortofoliu{
   font-size:3.5vh;
-  color:rgb(222,222,222);
+  color:rgb(244,244,244);
   margin:auto;
 
 }
@@ -251,50 +250,44 @@ html,body{
 .proiect{
   position:relative;
   display:flex;
-  flex-wrap:wrap;
   justify-content: center;
   margin-top:20vh;
 }
 
 .proiectStanga{
   margin:auto;
+  margin-left:0;
+  margin-top:0;
 }
 .proiectStanga img{
   position:relative;
   overflow:hidden;
-  width:45vh;
-  height:25vh;
-  z-index:2;
-  box-shadow:2px 2px 3px black;
-}
-.triunghi{
-  position:relative;
-  margin-top:-30vh;
-  width:40vh;
-  height:40vh;
-  background:black;
-  -webkit-clip-path: polygon(82% 0, 0% 100%, 100% 78%);
-  clip-path: polygon(82% 0, 0% 100%, 100% 78%);
-  z-index:1;
-}
+  width:60vh;
+  height:35vh;
 
+}
 .visitWebsite{
+  font-weight:600;
   position:relative;
   padding:2vh;
   cursor:pointer;
   color:white!important;
-  background:cyan;
-  font-size:3.5vh;
+  background:rgb(43, 121, 139);
+  font-size:3vh;
   text-align:center;
-  width:70%;
+  width:60%;
   margin:auto;
   transition:0.3s;
+  margin-top:2vh;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  background-size: 300% 100%;
 
 }
 
 .visitWebsite:hover{
-  background:rgb(1,1,1);
-}
+    background-position: 100% 0;
+  }
 .visitWebsite:hover div{
   -webkit-clip-path: polygon(0 24%, 100% 69%, 100% 100%, 0% 100%);
   clip-path: polygon(0 24%, 100% 69%, 100% 100%, 0% 100%);
@@ -304,7 +297,7 @@ html,body{
 .visitWebsite div{
   transition:0.4s;
   position:absolute;
-  background:rgba(255,255,255,0.3);
+  background:rgba(255,255,255,0.2);
   width:100%;
   height:100%;
   margin:auto;
@@ -316,18 +309,70 @@ html,body{
   cursor:pointer;
 }
 
+.codSursa{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  padding:1vh;
+  cursor:pointer;
+  color:white!important;
+  background:rgb(43, 121, 139);
+  font-size:2vh;
+  width:40%;
+  font-weight:700;
+  margin:auto;
+  transition:0.3s;
+  margin-top:2vh;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  background-size: 300% 100%;
 
+}
+.codSursa div{
+  margin:auto;
+  cursor:pointer;
+}
+.codSursa img{
+  width:20%;
+  height:100%;
+  margin:auto;
+  cursor:pointer;
+}
+.codSursa:hover{
+    background-position: 100% 0;
+  }
 
 
 .proiectDreapta{
-  color:rgb(155,155,155)!important;
+  color:rgb(155,155,155);
   margin:auto;
-
+  margin-top:10px;
+  margin-left:20vh;
 
 
 }
+.proiectDreaptaTitlu{
+  font-size:5vh;
+  color:rgb(100,100,100);
+  margin:0 0 4vh 2vh;
+  font-weight:600;
+}
 
-
+.proiectDreaptaTehnologii{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  margin-top:2vh;
+}
+.proiectDreaptaTehnologii div{
+  font-size:2vh;
+  color:white;
+  padding:1vh;
+  border-radius:15px;
+  margin-right:1vh;
+  margin-top:0.5vh;
+  background-image: linear-gradient(to right, rgb(98, 187, 162),rgb(235, 181, 128));
+}
 
 
 
@@ -343,7 +388,7 @@ html,body{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    background:rgba(1,1,1,1);
+    background:rgba(40, 40, 40,1);
     font-size:2vh;
     padding:3vh 10% 3vh 10%;
     width:100%;
