@@ -75,7 +75,7 @@ function move(el,bara) {
   const rect = el.getBoundingClientRect();
 
 	bara.style.width=el.offsetWidth+"px";
-	bara.style.left=rect.left + window.scrollX-19+"px";
+	bara.style.left=rect.left + window.scrollX-20+"px";
 };
 function moveAll(){
 		if(sw==1)

@@ -371,16 +371,83 @@ html,body{
   border-radius:15px;
   margin-right:1vh;
   margin-top:0.5vh;
-  background-image: linear-gradient(to right, rgb(98, 187, 162),rgb(235, 181, 128));
+  background-image: linear-gradient(to right, rgb(220, 145, 145),rgb(235, 181, 128));
 }
 
 
+.contact{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+
+}
+
+.contactContainer{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  color:gray;
+  margin:0 10% 0 10%;
+  color:rgb(200,200,200);
+  padding:10vh 0 30vh 0;
+  font-size:4vh;
+  justify-content: center;
+
+}
+.contactContainer img{
+  width:10vh;
+  height:10vh;
+  cursor:pointer;
+  }
+
+.contactTitlu{
+  font-size:10vh;
+  font-weight:600;
+  margin-bottom:10vh;
+  color:rgb(155,155,155);
+
+}
+
+.contactSus{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  margin:auto;
+  justify-content: center;
+  text-align:center;
+}
+.contactPost{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin:auto;
+  margin-bottom:3vh;
+
+}
+
+.contactPost img{
+  width:6vh;
+  height:100%;
+  cursor:default;
+}
+.contactPost div{
+  margin:auto auto auto 1vh;
+}
 
 
+.contactJos{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin:auto;
+  justify-content: center;
+  margin-top:5vh;
 
-
-
-
+}
 
 
 .bottom{
@@ -411,6 +478,14 @@ html,body{
   flex-wrap:wrap;
   width:50%;
   text-align:right;
+}
+.bottomRight img{
+  height:5vh;
+  width:5vh;
+  cursor:pointer;
+}
+.bottomRight a{
+  position:absolute;
 }
 
    @media screen and (max-width: 600px){
