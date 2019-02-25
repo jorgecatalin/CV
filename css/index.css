@@ -388,7 +388,7 @@ html,body{
   flex-direction:column;
   color:gray;
   margin:0 10% 0 10%;
-  color:rgb(200,200,200);
+  color:rgb(155,155,155);
   padding:10vh 0 30vh 0;
   font-size:4vh;
   justify-content: center;
@@ -404,7 +404,7 @@ html,body{
   font-size:10vh;
   font-weight:600;
   margin-bottom:10vh;
-  color:rgb(155,155,155);
+  color:rgb(100,100,100);
 
 }
 
@@ -485,6 +485,7 @@ html,body{
   cursor:pointer;
 }
 .bottomRight a{
+  display:none;
   position:absolute;
 }
 

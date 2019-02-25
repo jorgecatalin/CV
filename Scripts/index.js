@@ -104,3 +104,32 @@ meniu1.addEventListener("click",function(){move(meniu1,baraJosMeniu);sw=1});
 meniu2.addEventListener("click",function(){move(meniu2,baraJosMeniu);sw=2});
 meniu3.addEventListener("click",function(){move(meniu3,baraJosMeniu);sw=3});
 meniu4.addEventListener("click",function(){move(meniu4,baraJosMeniu);sw=4});
+
+
+$('#meniu1').click(function(){
+    $('html, body').animate({
+        scrollTop: $( "#contact").offset().top-($( window ).height()/10)
+    }, 1000);
+    return false;
+});
+
+$('#meniu2').click(function(){
+    $('html, body').animate({
+        scrollTop: $( "#portofoliu").offset().top+($( window ).height()/12)
+    }, 1000);
+    return false;
+});
+
+$('#meniu3').click(function(){
+    $('html, body').animate({
+        scrollTop: $( "#despre").offset().top+($( window ).height()/10)
+    }, 1000);
+    return false;
+});
+
+$('#meniu4').click(function(){
+    $('html, body').animate({
+        scrollTop: $( "#indexPrimaPoza").offset().top
+    }, 1000);
+    return false;
+});
