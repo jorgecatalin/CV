@@ -45,6 +45,9 @@ html,body{
 .top{
     z-index:2000;
     position:absolute;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
     top:0;
     left:0;
     background-color:rgba(1,1,1,0);
@@ -82,22 +85,28 @@ html,body{
   bottom:0;
   transition:0.3s;
 }
-.meniu{
-  margin-right:10%;
+.meniuDreapta{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin:auto;
+  right:10%;
 }
 
-.meniu div{
-  float:right;
+.meniuDreapta div{
   margin-left:20px;
 }
 
-.meniu div:hover{
+.meniuDreapta div:hover{
   cursor:pointer;
 }
 
 .topNume{
   font-family: 'Great Vibes', cursive;
-  position:absolute;
+}
+
+.meniuStanga{
+  margin:auto;
   left:10%;
 }
 
