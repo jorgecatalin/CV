@@ -42,6 +42,7 @@ html,body{
     height: 100%;
 
 }
+
 .top{
     z-index:2000;
     position:absolute;
@@ -66,7 +67,7 @@ html,body{
   font-size:2.5vh;
   color:rgb(255,255,255);
   padding:10px 0 10px 0;
-  font-weight:600;
+  font-weight:700;
 }
 
 .baraJosMeniu{
@@ -100,7 +101,6 @@ html,body{
 .meniuDreapta div:hover{
   cursor:pointer;
 }
-
 .topNume{
   font-family: 'Great Vibes', cursive;
 }
@@ -110,6 +110,9 @@ html,body{
   left:10%;
 }
 
+.meniuStanga div{
+  cursor:pointer;
+}
 
 .indexPrimaPoza{
   display:flex;
@@ -125,17 +128,33 @@ html,body{
 
 .titlu{
   position:absolute;
-  font-size:8vh;
+  font-size:6vh;
   color:white;
   width: 80%;
   margin-top:25%;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-right: 10%;
   max-width: none;
 }
 
+.fluctueaza{
+  display:inline;
+  animation:fluctueaza 1s infinite;
 
+}
 
+@keyframes fluctueaza{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+
+  }
+}
 
 .despre{
   width:80%;
@@ -169,6 +188,14 @@ html,body{
 
 }
 
+.skillsTitlu{
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:8vh;
+  font-family: 'Great Vibes', cursive;
+  font-weight:600;
+}
 
 .skillsBackground{
   position:absolute;
@@ -273,6 +300,7 @@ html,body{
   overflow:hidden;
   width:60vh;
   height:35vh;
+  margin:auto;
 
 }
 .visitWebsite{
@@ -342,8 +370,8 @@ html,body{
   cursor:pointer;
 }
 .codSursa img{
-  width:20%;
-  height:100%;
+  width:20%!important;
+  height:100%!important;
   margin:auto;
   cursor:pointer;
 }
@@ -460,47 +488,137 @@ html,body{
 
 
 .bottom{
-    position:relative;
+  position:relative;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap:wrap;
+    margin:auto;
+    text-align:center;
     background:rgba(40, 40, 40,1);
     font-size:2vh;
     padding:3vh 10% 3vh 10%;
     width:100%;
     color:white;
 
+
 }
 .bottom div{
-  margin-top:1vh;
+  margin-top:1.5vh;
 }
 
 .bottomLeft{
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  width:50%;
 }
-.bottomRight{
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  width:50%;
-  text-align:right;
-}
-.bottomRight img{
-  height:5vh;
-  width:5vh;
+
+
+
+.butonSus{
+  position:relative;
   cursor:pointer;
-}
-.bottomRight a{
   display:none;
-  position:absolute;
+  right:0;
+  margin-right:0;
+  transition:1s;
+  width:5vh;
+  height:5vh;
+}
+.butonSus div{
+  cursor:pointer;
+  margin-top:1vh;
+  width:100%;
+  height:0.5vh;
+  background:white;
+  transition:1s;
 }
 
-   @media screen and (max-width: 600px){
+.butonSus1{
+  position:absolute;
+  top:1vh;
+  transform:rotate(50deg);
+}
+.butonSus3{
+  top:1vh;
+  position:absolute;
+  transform:rotate(-50deg);
 
+}
+.butonSus2{
+  top:1vh;
+  position:absolute;
+  margin-left:50%;
+  width:0!important;
+}
 
+@media screen and (min-width: 700px) {
 
+  .meniuDreapta{
+    display:flex!important;
+  }
 
-   }
+}
+
+@media screen and (max-width: 700px){
+    .baraJosMeniu,.baraJosMeniu2{
+      display:none;
+    }
+    .meniuDreapta{
+      display:none;
+
+      width:100%;
+      margin:auto;
+      margin-top:2vh;
+      text-align:center;
+      font-size:6vh;
+      flex-direction:column;
+    }
+    .meniuDreapta div{
+      margin-top:2vh;
+      margin-left:0;
+    }
+    .top{
+      padding:1vh 3vh 1vh 3vh;
+    }
+    .topSchimba{
+    }
+    .meniuStanga{
+      left:0;
+      margin-left:0;
+    }
+    .butonSus{
+      display:block;
+    }
+
+    .titlu{
+      margin:40vh 0vh 0 5vh;
+    }
+
+    .despre{
+      padding-left:1vh;
+      padding-right:1vh;
+    }
+
+    .proiect{
+      margin-left:0;
+      flex-direction:column;
+    }
+
+    .containerPortofoliu{
+      padding:5vh;
+      margin:auto;
+      width:100%;
+    }
+    .proiectStanga img{
+      width:100%;
+      height:50vh;
+
+    }
+    .proiectDreapta{
+      margin-left:0;
+    }
+    .proiectDreaptaTitlu{
+      margin-top:5vh;
+    }
+
+    .contactTitlu{
+      font-size:6vh;
+    }
+}
